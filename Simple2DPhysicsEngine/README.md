@@ -23,13 +23,6 @@ The engine simulates circular rigid bodies under gravity, resolves collisions us
 
 🗂 Project Structure
 
-├── body.py          # Rigid body definition
-├── collisions.py    # Collision detection & response
-├── constraints.py   # Constraint solvers (distance constraint)
-├── world.py         # Physics world manager
-└── main.py          # Pygame rendering & simulation loop
-
-
 The physics modules are completely independent of Pygame. Rendering is handled separately in main.py. This separation mirrors real-world engine architecture where simulation logic and visualization are decoupled.
 
 🧠 Physics Model
