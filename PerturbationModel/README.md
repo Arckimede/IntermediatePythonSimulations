@@ -1,4 +1,4 @@
-# 🛰️ Satellite Perturbation Model (J2 Effect)
+# Satellite Perturbation Model (J2 Effect)
 
 This project extends a classical two-body orbit simulation by introducing **J2 perturbation**, accounting for Earth's oblateness. Instead of modeling Earth as a perfect sphere, I include its equatorial bulge, which causes measurable orbital drift: a real aerospace engineering effect.
 
