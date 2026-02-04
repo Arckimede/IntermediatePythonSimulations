@@ -39,7 +39,7 @@ The simulation enforces this condition automatically.
 If violated:
 - The solution becomes unstable
 - Energy grows exponentially
-- The simulation "blows up"
+- The simulation blows up
 
 ---
 
