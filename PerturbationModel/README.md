@@ -25,6 +25,6 @@ The simulation generates:
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 pip install numpy matplotlib scipy
