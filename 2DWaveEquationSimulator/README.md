@@ -28,7 +28,7 @@ uⁿ⁺¹ = 2uⁿ − uⁿ⁻¹ + c² dt² ∇²uⁿ
 
 ---
 
-## ⚖️ Stability Condition (CFL)
+## Stability Condition (CFL)
 
 For numerical stability in 2D:
 
@@ -58,7 +58,7 @@ If violated:
 
 ---
 
-## 🖱 Interactive Controls
+## Interactive Controls
 
 - Click anywhere on the membrane to inject a localized Gaussian pulse.
 - Watch wave propagation and reflections.
