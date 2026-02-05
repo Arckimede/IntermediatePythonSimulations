@@ -68,7 +68,7 @@ Gradual deviation from the ideal path
 
 ## 🦄 Features
 
-###🛰️ Dual Orbit Simulation
+### 🛰️ Dual Orbit Simulation
 
 Solves both models using solve_ivp
 
