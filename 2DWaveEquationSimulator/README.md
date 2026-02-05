@@ -83,7 +83,7 @@ You can use the energy plot to:
 
 ## Installation
 
-git clone https://github.com/Arckimede/IntermediatePythonSimulations/
+git clone https://github.com/Arckimede/IntermediatePythonSimulations.git
 
 ## Install dependencies:
 
