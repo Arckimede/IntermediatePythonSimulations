@@ -1,4 +1,4 @@
-🌊 2D Wave Equation Simulator
+# 🌊 2D Wave Equation Simulator
 
 An interactive physics simulation of wave propagation in 2D, built with Python and NumPy.
 
@@ -6,7 +6,7 @@ This project numerically solves the 2D wave equation using finite difference met
 
 The goal of this project was to better understand partial differential equations (PDEs), numerical stability, and scientific computing.
 
-📦 Technologies
+## 📦 Technologies
 
 Python
 
@@ -16,13 +16,13 @@ Matplotlib
 
 Finite Difference Method (FDM)
 
-🧠 What This Simulates
+## 🧠 What This Simulates
 
 This program solves the 2D wave equation:
 
 u_tt = c² (u_xx + u_yy)
 
-In simple terms:
+Basically:
 
 A wave starts as a Gaussian pulse.
 
@@ -34,11 +34,11 @@ The system’s total energy is calculated at every frame.
 
 The simulation respects the CFL stability condition, ensuring the numerical solution remains stable.
 
-🦄 Features
+## 🦄 Features
 
 Here’s what the simulator can do:
 
-🌊 Real-Time Wave Propagation
+### 🌊 Real-Time Wave Propagation
 
 Simulates wave motion on a 2D grid.
 
@@ -46,7 +46,7 @@ Uses second-order central difference discretization.
 
 Updates in real time with animation.
 
-📊 Energy Monitoring
+### 📊 Energy Monitoring
 
 Computes kinetic + potential energy at each timestep.
 
@@ -54,13 +54,13 @@ Displays total energy to verify conservation.
 
 Helps analyze numerical stability.
 
-🖱 Interactive Pulse Injection
+### 🖱 Interactive Pulse Injection
 
 Click anywhere on the grid to add a new wave pulse.
 
 Allows experimentation with wave interference.
 
-⚙ Stable Time Integration
+### ⚙ Stable Time Integration
 
 Implements CFL-safe timestep:
 
@@ -68,7 +68,7 @@ dt = dx / (c * √2) * 0.9
 
 Prevents numerical blow-up.
 
-👨‍🔬 The Numerical Method
+### 👨‍🔬 The Numerical Method
 
 This simulation uses:
 
@@ -84,14 +84,6 @@ The update rule:
 
 u_next = 2u - u_prev + c² dt² ∇²u
 
-This method is:
-
-Simple
-
-Efficient
-
-Conditionally stable
-
 Energy is computed using:
 
 Velocity approximation: (u - u_prev)/dt
@@ -100,24 +92,25 @@ Spatial gradients for potential energy
 
 This allows monitoring whether the numerical method preserves energy as expected.
 
-📈 What I Learned
-🔢 Numerical Stability
+## 📈 What I Learned
+
+### 🔢 Numerical Stability
 
 Understanding and applying the CFL condition to prevent simulation instability.
 
-🧮 Discretizing PDEs
+### 🧮 Discretizing PDEs
 
 How continuous equations are converted into grid-based approximations.
 
-⚡ Energy Validation
+### ⚡ Energy Validation
 
 Using energy conservation as a correctness check for physical simulations.
 
-🎥 Scientific Visualization
+### 🎥 Scientific Visualization
 
 How to animate and visualize time-evolving physical systems.
 
-🧠 Thinking Like a Simulation Engineer
+### 🧠 Thinking Like a Simulation Engineer
 
 Balancing:
 
