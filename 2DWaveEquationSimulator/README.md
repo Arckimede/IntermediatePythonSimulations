@@ -14,8 +14,6 @@ NumPy
 
 Matplotlib
 
-Finite Difference Method (FDM)
-
 ## 🧠 What This Simulates
 
 This program solves the 2D wave equation:
