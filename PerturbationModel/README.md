@@ -42,7 +42,7 @@ More realistic acceleration model
 
 The simulation shows how even small perturbations cause measurable orbital deviation over time.
 
-##🌍 Physical Background 
+## 🌍 Physical Background 
 
 In the ideal case, acceleration is:
 
