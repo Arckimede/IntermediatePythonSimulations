@@ -2,7 +2,7 @@
 
 A physics-based simulation of satellite motion around Earth, comparing an ideal two-body orbit with a more realistic J2-perturbed model.
 
-Built with Python, NumPy, SciPy, and Matplotlib, this project demonstrates how small physical effects (Earth’s oblateness) influence long-term orbital motion.
+Built with Python, NumPy, SciPy and Matplotlib, this project demonstrates how small physical effects (Earth’s oblateness) influence long-term orbital motion.
 
 ## 📦 Technologies
 
@@ -10,7 +10,7 @@ Python
 
 NumPy
 
-SciPy (solve_ivp)
+SciPy
 
 Matplotlib (2D + 3D plotting)
 
@@ -118,7 +118,7 @@ This demonstrates how small physical corrections matter in real satellite dynami
 
 How gravitational harmonics affect satellite motion.
 
-🔢 Modeling Physical Systems
+### 🔢 Modeling Physical Systems
 
 How to translate physics equations into ODE systems.
 
