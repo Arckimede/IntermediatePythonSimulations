@@ -1,90 +1,130 @@
-# 2D Wave Equation Simulator (Finite Differences)
+🌊 2D Wave Equation Simulator
 
-A Python simulation of a vibrating membrane (like a drum surface) using a finite difference solution of the 2D wave equation.
-This project demonstrates numerical PDE discretization, stability constraints (CFL condition) and grid-based simulation using fully vectorized NumPy operations.
+An interactive physics simulation of wave propagation in 2D, built with Python and NumPy.
 
----
+This project numerically solves the 2D wave equation using finite difference methods and visualizes the results in real time. It also tracks total system energy to verify numerical stability.
 
-## Mathematical Model
+The goal of this project was to better understand partial differential equations (PDEs), numerical stability, and scientific computing.
 
-We solve the 2D wave equation:
+📦 Technologies
 
-∂²u/∂t² = c² ∇²u
+Python
 
-Where:
-- `u(x, y, t)` = membrane displacement
-- `c` = wave propagation speed
-- `∇²` = 2D Laplacian operator
+NumPy
 
-### Spatial Discretization
+Matplotlib
 
-The Laplacian is approximated using second-order finite differences:
+Finite Difference Method (FDM)
 
-∇²uᵢⱼ ≈  (uᵢ₊₁ⱼ + uᵢ₋₁ⱼ + uᵢⱼ₊₁ + uᵢⱼ₋₁ − 4uᵢⱼ) / dx²
+🧠 What This Simulates
 
-### Time Stepping (Explicit Scheme)
+This program solves the 2D wave equation:
 
-uⁿ⁺¹ = 2uⁿ − uⁿ⁻¹ + c² dt² ∇²uⁿ
+u_tt = c² (u_xx + u_yy)
 
----
+In simple terms:
 
-## Stability Condition (CFL)
+A wave starts as a Gaussian pulse.
 
-For numerical stability in 2D:
+It spreads outward over time.
 
-c * dt / dx ≤ 1 / √2
+Boundaries are fixed (Dirichlet boundary conditions).
 
-The simulation enforces this condition automatically.
+The system’s total energy is calculated at every frame.
 
-If violated:
-- The solution becomes unstable
-- Energy grows exponentially
-- The simulation blows up
+The simulation respects the CFL stability condition, ensuring the numerical solution remains stable.
 
----
+🦄 Features
 
-## Features
+Here’s what the simulator can do:
 
-- 2D finite difference discretization
-- Explicit second-order time integration
-- CFL-stable time stepping
-- Fixed (Dirichlet) boundary conditions
-- Optional free (Neumann) boundary conditions
-- Gaussian pulse initial condition
-- Interactive mouse excitation (click to hit the membrane)
-- Real-time animation (Matplotlib)
-- Total energy computation and visualization
-- Fully vectorized NumPy implementation
+🌊 Real-Time Wave Propagation
 
----
+Simulates wave motion on a 2D grid.
 
-## Interactive Controls
+Uses second-order central difference discretization.
 
-- Click anywhere on the membrane to inject a localized Gaussian pulse.
-- Watch wave propagation and reflections.
-- Observe energy conservation in the live energy plot.
+Updates in real time with animation.
 
----
+📊 Energy Monitoring
 
-## Energy Monitoring
+Computes kinetic + potential energy at each timestep.
 
-The simulator computes total energy:
+Displays total energy to verify conservation.
 
-E = ∫ [ ½ (u_t)² + ½ c² |∇u|² ] dx dy
+Helps analyze numerical stability.
 
-You can use the energy plot to:
+🖱 Interactive Pulse Injection
 
-- Verify numerical stability
-- Detect CFL violations
-- Observe energy injection from mouse interaction
-- Study boundary reflections
+Click anywhere on the grid to add a new wave pulse.
 
----
+Allows experimentation with wave interference.
 
-## Installation
+⚙ Stable Time Integration
 
-git clone https://github.com/Arckimede/IntermediatePythonSimulations.git
+Implements CFL-safe timestep:
 
-## Install dependencies:
+dt = dx / (c * √2) * 0.9
 
-pip install numpy matplotlib
+Prevents numerical blow-up.
+
+👨‍🔬 The Numerical Method
+
+This simulation uses:
+
+Second-order central differences in space
+
+Explicit time stepping
+
+Finite difference Laplacian
+
+Fixed boundary conditions (u = 0 at edges)
+
+The update rule:
+
+u_next = 2u - u_prev + c² dt² ∇²u
+
+This method is:
+
+Simple
+
+Efficient
+
+Conditionally stable
+
+Energy is computed using:
+
+Velocity approximation: (u - u_prev)/dt
+
+Spatial gradients for potential energy
+
+This allows monitoring whether the numerical method preserves energy as expected.
+
+📈 What I Learned
+🔢 Numerical Stability
+
+Understanding and applying the CFL condition to prevent simulation instability.
+
+🧮 Discretizing PDEs
+
+How continuous equations are converted into grid-based approximations.
+
+⚡ Energy Validation
+
+Using energy conservation as a correctness check for physical simulations.
+
+🎥 Scientific Visualization
+
+How to animate and visualize time-evolving physical systems.
+
+🧠 Thinking Like a Simulation Engineer
+
+Balancing:
+
+Accuracy
+
+Stability
+
+Performance
+
+Code clarity
