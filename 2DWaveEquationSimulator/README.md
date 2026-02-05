@@ -109,15 +109,3 @@ Using energy conservation as a correctness check for physical simulations.
 ### 🎥 Scientific Visualization
 
 How to animate and visualize time-evolving physical systems.
-
-### 🧠 Thinking Like a Simulation Engineer
-
-Balancing:
-
-Accuracy
-
-Stability
-
-Performance
-
-Code clarity
