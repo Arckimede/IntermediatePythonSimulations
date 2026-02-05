@@ -4,7 +4,7 @@ An interactive physics simulation of wave propagation in 2D, built with Python a
 
 This project numerically solves the 2D wave equation using finite difference methods and visualizes the results in real time. It also tracks total system energy to verify numerical stability.
 
-The goal of this project was to better understand partial differential equations (PDEs), numerical stability, and scientific computing.
+The goal of this project was to better understand partial differential equations (PDEs), numerical stability and scientific computing.
 
 ## 📦 Technologies
 
