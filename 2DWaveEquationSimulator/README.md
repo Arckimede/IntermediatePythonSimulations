@@ -1,7 +1,3 @@
-
-https://github.com/user-attachments/assets/2700ec24-69e2-4bac-a18e-736ae98652a8
-
-https://github.com/user-attachments/assets/2700ec24-69e2-4bac-a18e-736ae98652a8
 # 🌊 2D Wave Equation Simulator
 
 An interactive physics simulation of wave propagation in 2D, built with Python and NumPy.
