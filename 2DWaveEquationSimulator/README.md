@@ -1,3 +1,7 @@
+
+https://github.com/user-attachments/assets/2700ec24-69e2-4bac-a18e-736ae98652a8
+
+https://github.com/user-attachments/assets/2700ec24-69e2-4bac-a18e-736ae98652a8
 # 🌊 2D Wave Equation Simulator
 
 An interactive physics simulation of wave propagation in 2D, built with Python and NumPy.
@@ -107,3 +111,7 @@ Using energy conservation as a correctness check for physical simulations.
 ### 🎥 Scientific Visualization
 
 How to animate and visualize time-evolving physical systems.
+
+## 📹 Video
+
+https://github.com/user-attachments/assets/e42e8b52-5ce0-4014-ac5b-914e11b29da8
