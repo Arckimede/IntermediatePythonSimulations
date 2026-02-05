@@ -149,3 +149,7 @@ Validate against known analytical J2 precession rate
 Add animation of satellite motion
 
 Turn into reusable orbital mechanics module
+
+## 📹 Video
+
+https://github.com/user-attachments/assets/0ac0198c-0856-42bc-8c5f-aa1c4d984e4c
