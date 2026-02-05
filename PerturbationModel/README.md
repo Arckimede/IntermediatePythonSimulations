@@ -1,30 +1,151 @@
-# Satellite Perturbation Model (J2 Effect)
-This project extends a classical two-body orbit simulation by introducing **J2 perturbation**, accounting for Earth's oblateness. Instead of modeling Earth as a perfect sphere, I include its equatorial bulge, which causes measurable orbital drift: a real aerospace engineering effect.
+# 🛰️ Orbital Perturbation Simulator (J2 Model)
 
----
+A physics-based simulation of satellite motion around Earth, comparing an ideal two-body orbit with a more realistic J2-perturbed model.
 
-## What This Project Demonstrates
+Built with Python, NumPy, SciPy, and Matplotlib, this project demonstrates how small physical effects (Earth’s oblateness) influence long-term orbital motion.
 
-1. Two-body orbital mechanics  
-2. J2 perturbation modeling  
-3. Numerical ODE integration using SciPy  
-4. 3D orbit visualization  
-5. Deviation analysis over time  
+## 📦 Technologies
 
----
+Python
 
-## Output
+NumPy
 
-The simulation generates:
+SciPy (solve_ivp)
 
-1. 3D comparison of:
-   - Ideal orbit
-   - J2 perturbed orbit
+Matplotlib (2D + 3D plotting)
 
-2. Position deviation vs time plot
+Classical orbital mechanics
 
----
+## 🧠 What This Simulates
 
-## Requirements
+This project compares two models of satellite motion:
 
-pip install numpy matplotlib scipy
+### 1️⃣ Ideal Two-Body Model
+
+Assumes:
+
+Earth is perfectly spherical
+
+Only gravity acts on the satellite
+
+Orbit follows Newton’s inverse-square law
+
+### 2️⃣ J2 Perturbation Model
+
+Adds:
+
+Earth’s oblateness (equatorial bulge)
+
+J2 gravitational harmonic term
+
+More realistic acceleration model
+
+The simulation shows how even small perturbations cause measurable orbital deviation over time.
+
+##🌍 Physical Background 
+
+In the ideal case, acceleration is:
+
+a = -μ r / r³
+
+Where:
+
+μ is Earth’s gravitational parameter
+
+r is the position vector
+
+The J2 model adds a correction term:
+
+a_J2 ∝ J2 * (R_earth² / r⁵)
+
+This accounts for Earth's slightly flattened shape.
+
+The result is:
+
+Orbital precession
+
+Gradual deviation from the ideal path
+
+## 🦄 Features
+
+###🛰️ Dual Orbit Simulation
+
+Solves both models using solve_ivp
+
+Integrates full 3D motion
+
+Same initial conditions for fair comparison
+
+### 🌎 3D Orbit Visualization
+
+Displays both orbits in 3D space
+
+Includes Earth rendered as a sphere
+
+Clear visual comparison of divergence
+
+### 📈 Deviation Analysis
+
+Computes position difference over time
+
+Shows how perturbation accumulates
+
+Quantifies physical impact of J2
+
+### ⚙ Numerical Integration
+
+Uses SciPy’s adaptive ODE solver
+
+Handles nonlinear coupled differential equations
+
+Maintains stable integration over hours
+
+## 📊 What the Results Show
+
+Over 4 hours:
+
+The ideal orbit remains perfectly Keplerian.
+
+The J2-perturbed orbit slowly deviates.
+
+Position error grows over time.
+
+This demonstrates how small physical corrections matter in real satellite dynamics.
+
+## 📈 What I Learned
+
+### 🧮 Orbital Mechanics
+
+How gravitational harmonics affect satellite motion.
+
+🔢 Modeling Physical Systems
+
+How to translate physics equations into ODE systems.
+
+### 🧠 Perturbation Theory in Practice
+
+Understanding how small corrections create measurable long-term effects.
+
+### ⚙ Numerical Integration
+
+Working with adaptive ODE solvers and 6D state vectors.
+
+### 🌍 Visualization of Physical Systems
+
+Rendering 3D trajectories and interpreting simulation data.
+
+## 💭 Possible Improvements
+
+Simulate longer durations (days instead of hours)
+
+Show orbital element changes (RAAN precession)
+
+Add atmospheric drag model
+
+Compare different inclinations
+
+Validate against known analytical J2 precession rate
+
+Add animation of satellite motion
+
+Turn into reusable orbital mechanics module
