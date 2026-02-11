@@ -126,3 +126,6 @@ Simulating systems where mass changes over time.
 
 ### 📈 Scientific Visualization
 Plotting trajectories and comparing numerical methods visually.
+
+## 📹 Video
+https://github.com/user-attachments/assets/5f8324b2-8daa-4aae-b8dd-c6d43b9e2578
